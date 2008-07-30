@@ -1,6 +1,6 @@
 Name:           sdlmame-data-samples
 Version:        0126
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Sound samples for the SDLMAME package
 
 Group:          Amusements/Games
@@ -41,6 +41,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Wed Jul 30 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info - 0126-2
+- rebuild for buildsys cflags issue
+
 * Fri Jul 11 2008 Julian Sikorski <belegdol[at]gmail[dot]com> - 0126-1
 - Removed dkongjr and mario
 - Updated gorf
