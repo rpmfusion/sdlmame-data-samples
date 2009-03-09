@@ -1,17 +1,17 @@
 Name:           sdlmame-data-samples
-Version:        0126
-Release:        2%{?dist}
+Version:        0129
+Release:        1%{?dist}
 Summary:        Sound samples for the SDLMAME package
 
 Group:          Amusements/Games
 License:        Distributable
-URL:            http://www.mameworld.net/samples
+URL:            http://samples.mameworld.info
 Source0:        sdlmame-samples.tar
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:      noarch
 
-Requires:       sdlmame >= 0126
+Requires:       sdlmame >= 0129
 
 %description
 %{summary}.
@@ -41,6 +41,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Mar 09 2009 Julian Sikorski <belegdol[at]gmail[dot]com> - 0129-1
+- Added cosmica
+- Updated the URL
+
 * Wed Jul 30 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info - 0126-2
 - rebuild for buildsys cflags issue
 
