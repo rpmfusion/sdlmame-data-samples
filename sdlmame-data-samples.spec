@@ -1,5 +1,5 @@
 Name:           sdlmame-data-samples
-Version:        0133
+Version:        0134
 Release:        1%{?dist}
 Summary:        Sound samples for the SDLMAME package
 
@@ -98,6 +98,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Tue Sep 22 2009 Julian Sikorski <belegdol[at]gmail[dot]com> - 0134-1
+- Updated safarir
+
 * Wed Jul 22 2009 Julian Sikorski <belegdol[at]gmail[dot]com> - 0133-1
 - Added barrier, safarir and starhawk
 - Split the source into individual files in order to make updating easier
