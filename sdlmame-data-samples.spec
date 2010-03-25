@@ -1,5 +1,5 @@
 Name:           sdlmame-data-samples
-Version:        0134
+Version:        0137
 Release:        1%{?dist}
 Summary:        Sound samples for the SDLMAME package
 
@@ -86,7 +86,6 @@ Requires:       sdlmame >= 0133
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/mame/samples
 install -pm 644 %{sources} $RPM_BUILD_ROOT%{_datadir}/mame/samples
-done
 
 
 %clean
