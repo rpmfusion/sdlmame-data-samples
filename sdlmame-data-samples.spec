@@ -1,5 +1,5 @@
 Name:           sdlmame-data-samples
-Version:        0137
+Version:        0134
 Release:        1%{?dist}
 Summary:        Sound samples for the SDLMAME package
 
