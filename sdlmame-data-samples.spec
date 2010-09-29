@@ -65,6 +65,8 @@ Source56:       zaxxon.zip
 Source57:       zektor.zip
 Source58:       speedfrk.zip
 Source59:       wotw.zip
+Source60:       alphamc07.zip
+Source61:       aristmk4.zip
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:      noarch
@@ -98,6 +100,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Wed Sep 29 2010 Julian Sikorski <belegdol[at]gmail[dot]com> - 0139-1
+- Added alphamc07 and aristmk4
+
 * Thu Mar 25 2010 Julian Sikorski <belegdol[at]gmail[dot]com> - 0137-1
 - Added speedfrk and wotw
 
