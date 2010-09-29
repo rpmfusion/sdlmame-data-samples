@@ -1,5 +1,5 @@
 Name:           sdlmame-data-samples
-Version:        0134
+Version:        0137
 Release:        1%{?dist}
 Summary:        Sound samples for the SDLMAME package
 
@@ -63,6 +63,10 @@ Source54:       warrior.zip
 Source55:       wow.zip
 Source56:       zaxxon.zip
 Source57:       zektor.zip
+Source58:       speedfrk.zip
+Source59:       wotw.zip
+Source60:       alphamc07.zip
+Source61:       aristmk4.zip
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:      noarch
@@ -83,9 +87,7 @@ Requires:       sdlmame >= 0133
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/mame/samples
-for sample in %{sources}
-do install -pm 644 $sample $RPM_BUILD_ROOT%{_datadir}/mame/samples
-done
+install -pm 644 %{sources} $RPM_BUILD_ROOT%{_datadir}/mame/samples
 
 
 %clean
@@ -98,6 +100,12 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Wed Sep 29 2010 Julian Sikorski <belegdol[at]gmail[dot]com> - 0139-1
+- Added alphamc07 and aristmk4
+
+* Thu Mar 25 2010 Julian Sikorski <belegdol[at]gmail[dot]com> - 0137-1
+- Added speedfrk and wotw
+
 * Tue Sep 22 2009 Julian Sikorski <belegdol[at]gmail[dot]com> - 0134-1
 - Updated safarir
 
